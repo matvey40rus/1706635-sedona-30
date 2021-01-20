@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Станислав Матвеев](https://up.htmlacademy.ru/htmlcss/30/user/1706635).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza).
 
 ---
 
