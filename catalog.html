@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+<header>
+  <a href="index.html">
+    <img src="img/logo" width="138" height="70" alt="Логотип Седона">
+  </a>
+  <nav>
+    <ul>
+      <li><a href="blank.html">Информация</a></li>
+      <li><a href="blank.html">Фото и видео</a></li>
+      <li><a href="blank.html">Карта штата</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Фильтр отелей</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div>
+        <p>Инфраструктура:</p>
+        <input type="checkbox" name="pool" id="pool" checked>
+        <label for="pool">
+          "Бассейн"
+        </label>
+        <input type="checkbox" name="parking" id="parking">
+        <label for="parking">
+          "Парковка"
+        </label>
+        <input type="checkbox" name="wifi" id="wifi">
+        <label for="wifi">
+          "Wi-fi"
+        </label>
+      </div>
+
+      <div>
+        <p>Тип жилья:</p>
+        <input type="checkbox" name="hotel" id="hotel" checked>
+        <label for="hotel">
+          "Гостиница"
+        </label>
+        <input type="checkbox" name="motel" id="motel" checked>
+        <label for="motel">
+          "Мотель"
+        </label>
+        <input type="checkbox" name="apartments" id="apartments" checked>
+        <label for="apartments">
+          "Апартаменты"
+        </label>
+      </div>
+
+      <div>
+        <p>Стоимость в сутки (Р):</p>
+          <div>
+            <p>
+              "от"
+              <span id="min-price">0</span>
+            </p>
+            <p>
+              "до"
+              <span id="max-price">3000</span>
+            </p>
+          </div>
+        <div>
+          <div id="range-slider">
+            <div data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="3000" aria-valuenow="0" aria-valuetext="0">
+            </div>
+            <div data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="4000" aria-valuenow="3000" aria-valuetext="3000">
+            </div>
+          </div>
+        </div>
+              <label for="min-price-value">Минимальная цена</label>
+              <input type="text" id="min-price-value" name="min-price-value" tabindex="-1">
+              <label for="max-price-value">Максимальная цена</label>
+              <input type="text" id="max-price-value" name="max-price-value" tabindex="-1">
+      <button type="submit">Показать</button>
+    </div>
+  </section>
+  <section>
+      <h2>Доступные отели:</h2>
+      <div>
+        <p>
+          "Найдено: "
+          <span id="hotelNumber">3</span>
+        </p>
+        <p>Сортировка:</p>
+        <ul>
+          <li>
+            <a>По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+          <button type="button">
+            <span>Сортировка по убыванию</span>
+          </button>
+          <button type="button">
+            <span>Сортировка по возрастанию</span>
+          </button>
+      </div>
+      <ul>
+        <li>
+          <div>
+            <img src="img/" width="135" height="90" alt="Amara spa"
+              <a href="#">Amara Resort & Spa</a>
+                <p>Гостиница</p>
+                <a href="#">Подробнее</a>
+          </div>
+          <div>
+            <p>От 4000р.</p>
+            <a href="#">Забронировать</a>
+          </div>
+          <ul>
+            <li>
+              <span>1 звезда</span>
+            </li>
+            <li>
+              <span>2 звезды</span>
+            </li>
+            <li>
+              <span>3 звезды</span>
+            </li>
+            <li>
+              <span>4 звезды</span>
+            </li>
+            <li>
+              <span>5 звезд</span>
+            </li>
+          </ul>
+          <p>
+            "Рейтинг: "
+            <span>8,5</span>
+          </p>
+        </li>
+        <li>
+          <div>
+            <img src="img/" width="135" height="90" alt="Desert Quail Inn"
+              <a href="#">Desert Quail Inn</a>
+                <p>Мотель</p>
+                <a href="#">Подробнее</a>
+          </div>
+          <div>
+            <p>От 3000р.</p>
+            <a href="#">Забронировать</a>
+          </div>
+          <ul>
+            <li>
+              <span>1 звезда</span>
+            </li>
+            <li>
+              <span>2 звезды</span>
+            </li>
+            <li>
+              <span>3 звезды</span>
+            </li>
+            <li>
+              <span>4 звезды</span>
+            </li>
+            <li>
+              <span>5 звезд</span>
+            </li>
+          </ul>
+          <p>
+            "Рейтинг: "
+            <span>8,9</span>
+          </p>
+        </li>
+        <li>
+          <div>
+            <img src="img/" width="135" height="90" alt="Villas at Poco Diablo"
+              <a href="#">Villas at Poco Diablo</a>
+              <p>Апартаменты</p>
+              <a href="#">Подробнее</a>
+          </div>
+          <div>
+            <p>От 2000р.</p>
+            <a href="#">Забронировать</a>
+          </div>
+          <ul>
+            <li>
+              <span>1 звезда</span>
+            </li>
+            <li>
+              <span>2 звезды</span>
+            </li>
+            <li>
+              <span>3 звезды</span>
+            </li>
+            <li>
+              <span>4 звезды</span>
+            </li>
+            <li>
+              <span>5 звезд</span>
+            </li>
+          </ul>
+          <p>
+            "Рейтинг: "
+            <span>9,2</span>
+          </p>
+        </li>
+      </ul>
+  </section>
+</main>
+<footer>
+  <section>
+    <ul>
+      <li>
+        <a href="#">#visitSEDONA</a>
+      </li>
+      <li>
+        ТЕЛ: <a href="tel:+7(495)6660166">+7(495) 666-01-66</a>
+      </li>
+      <li>
+        <a href="#">Twitter</a>
+      </li>
+      <li>
+        <a href="#">Facebook</a>
+      </li>
+      <li>
+        <a href="#">Youtube</a>
+      </li>
+    </ul>
+    <p>
+        Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="https://htmlacademy.ru/" width="113,98" height="39,78" alt="Логотип HTMLacademy"
+        </a>
+    </p>
+  </section>
+</footer>
+</body>
+</html>
