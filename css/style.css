@@ -1,0 +1,297 @@
+/* Fonts*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans.woff2) format("woff2"), url(../fonts/PTSans.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2"), url(../fonts/PTSans-Bold.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Variables */
+
+:root{
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-gray: #eeeeee;
+  --checkbox-gray: #6A6A6A;
+  --copyright-gray: #BDBBBC;
+  --special-gray: #F2F2F2;
+  --special-dark-gray: #EBEBEB;
+  --basic-white: #ffffff;
+  --brown: #766357;
+  --dark-brown: #604E43;
+  --extra-dark-brown: #503E33;
+  --blue: #81B3D2;
+  --dark-blue: #669EC0;
+  --extra-dark-blue: #5496BD;
+}
+
+/* Global styles*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation*/
+
+.main-header {
+  width: 1200px;
+  position: absolute;
+}
+
+.head-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.navigation-list li {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.navigation-list li:hover {
+  color: var(--blue);
+}
+
+.navigation-list li:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.navigation-list li:active {
+  color: var(--brown);
+  font-weight: 700;
+}
+
+.header-logo {
+    position: absolute;
+    width: 138px;
+    left: 571px;
+}
+
+/* Main content */
+
+.main-content {
+  display: grid;
+}
+
+.headline-background h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.headline-background p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.blue-zone {
+  background-color: var(--blue);
+  color: var(--basic-white);
+}
+
+.kinds-text,
+.bridge-text {
+  text-align: center;
+}
+
+.kinds-text p,
+.bridge-text p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.kinds-text h3,
+.bridge-text h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantages-list {
+  list-style: none;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.gray-zone {
+  background-color: var(--basic-gray);
+}
+
+.search-hotel-text h2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.search-hotel-text p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.search-button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  border: none;
+}
+
+.search-button:hover {
+  background-color: var(--dark-brown);
+}
+
+.search-button:active {
+  background-color: var(--extra-dark-brown);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.search-item input {
+  font: inherit;
+  background-color: var(--special-gray);
+  border: none;
+}
+
+.search-item input:hover {
+  border-color: var(--special-dark-gray);
+}
+
+.search-item input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+}
+
+.form-date-input {
+  position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 9px;
+    top: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.submit-form-button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--blue);
+  border: none;
+}
+
+.submit-form-button:hover {
+  background-color: var(--dark-blue);
+}
+
+.submit-form-button:active {
+  background-color: var(--extra-dark-blue);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.google_map {
+  width: 1200px;
+  height: 594px;
+  background: url(../img/map.jpg)
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--basic-black);
+}
+
+.contact-list {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contact-list a{
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.social-list {
+  text-align: center;
+}
+
+.social-list ul {
+  list-style: none;
+}
+
+.social-list a {
+  color: var(--blue);
+}
+
+.social-list a svg {
+  background-color: var(--blue);
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  background-color: var(--blue);
+  color: var(--basic-white);
+}
+
+.logo-htmlacademy {
+  color: var(--basic-black);
+}
+
+.logo-htmlacademy:hover,
+.logo-htmlacademy:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
