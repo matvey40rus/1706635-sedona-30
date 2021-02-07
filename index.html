@@ -8,8 +8,8 @@
       <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
       <link rel="apple-touch-icon" href="img/favicons/180.png">
       <link rel="manifest" href="manifest.webmanifest">
-      <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
    </head>
    <body class="page-body">
       <header class="main-header">
@@ -18,10 +18,10 @@
          </a>
          <nav class="head-navigation">
             <ul class="navigation-list">
-               <li><a href="#">Информация</a></li>
-               <li><a href="#">Фото и видео</a></li>
-               <li><a href="#">Карта штата</a></li>
-               <li><a href="catalog.html">Гостиницы</a></li>
+               <li><a class="navigation-item" href="#">Информация</a></li>
+               <li><a class="navigation-item" href="#">Фото и видео</a></li>
+               <li><a class="navigation-item" href="#">Карта штата</a></li>
+               <li><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
             </ul>
          </nav>
       </header>
@@ -42,18 +42,18 @@
          <section class="advantages-list">
             <ul>
                <li>
-                  <img src="img/house.svg" width="75" height="72" alt="Жилье">
-                  <p>Жилье</p>
+                  <img src="img/icon-house.svg" width="75" height="72" alt="Жилье">
+                  <h3>Жилье</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                </li>
                <li>
                   <img src="img/icon-food.svg" width="74" height="70" alt="Еда">
-                  <p>Еда</p>
+                  <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                </li>
                <li>
                   <img src="img/icon-souvenir.svg" width="64" height="76" alt="Сувениры">
-                  <p>Сувениры</p>
+                  <h3>Сувениры</h3>
                   <p>Не только Китайского, но и местного производства!</p>
                </li>
             </ul>
@@ -69,19 +69,17 @@
          <section class="features-list gray-zone">
             <ul>
                <li>
-                  <p>Небольшая площадь
-                  <p>
+                  <h3>Небольшая площадь</h3>
                   <p>— №3 —</p>
                   <p>Все достопримечательности находятся очень близко</p>
                </li>
                <li>
-                  <p>Красивая дорога</p>
-                  <p>— №4 —
-                  <p>
+                  <h3>Красивая дорога</h3>
+                  <p>— №4 —</p>
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                </li>
                <li>
-                  <p>Мало туристов</p>
+                  <h3>Мало туристов</h3>
                   <p>— №5 —</p>
                   <p>Большинство едет в Гранд Каньон и толпится там</p>
                </li>
@@ -144,6 +142,7 @@
             </p>
              <button type="submit" class="submit-form-button">Найти</button>
           </form>
+          <img src="img/map.jpg" width="1200" height="594" alt="Google карта">
           <iframe class="google_map" tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62750.76538150069!2d-111.8351159650146!3d34.851085024576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1611664854988!5m2!1sru!2sru" width="1200" height="480" style="border:0;" allowfullscreen>
           </iframe>
          </section>
