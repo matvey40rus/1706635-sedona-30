@@ -75,36 +75,41 @@ img {
   background-color: transparent;
 }
 
-.navigation-list li {
+.navigation-item {
+  color: var(--basic-black)
   text-decoration: none;
   font-weight: 700;
   line-height: 26px;
 }
 
-.navigation-list li:hover {
-  color: var(--blue);
+.navigation-item:hover {
+  color: var(--basic-black);
 }
 
-.navigation-list li:focus {
+.navigation-item:focus {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.navigation-list li:active {
+.navigation-item:active {
   color: var(--brown);
   font-weight: 700;
 }
 
 .header-logo {
-    position: absolute;
-    width: 138px;
-    left: 571px;
+  position: absolute;
+  width: 138px;
+  left: 571px;
 }
 
 /* Main content */
 
-.main-content {
-  display: grid;
+.headline-background {
+  background-color: var(--dark-blue);
+  background: url(../img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .headline-background h1 {
@@ -117,6 +122,7 @@ img {
 .headline-background p {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-extra-dark);
 }
 
 .blue-zone {
@@ -145,12 +151,26 @@ img {
 .advantages-list {
   list-style: none;
   background-color: var(--basic-white);
-  color: var(--basic-black);
   text-align: center;
 }
 
 .gray-zone {
   background-color: var(--basic-gray);
+}
+
+.advantages-list h3,
+.features-list h3 {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantages-list p,
+.features-list p {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-extra-dark);
 }
 
 .search-hotel-text h2 {
@@ -189,6 +209,7 @@ img {
 }
 
 .search-form {
+  position: relative;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -211,13 +232,13 @@ img {
 
 .form-date-input {
   position: absolute;
-    margin: 0;
-    padding: 0;
-    right: 9px;
-    top: 8px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  right: 9px;
+  top: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .submit-form-button {
@@ -243,7 +264,7 @@ img {
 .google_map {
   width: 1200px;
   height: 594px;
-  background: url(../img/map.jpg)
+  position: absolute;
 }
 
 /* Footer */
@@ -270,10 +291,6 @@ img {
 
 .social-list ul {
   list-style: none;
-}
-
-.social-list a {
-  color: var(--blue);
 }
 
 .social-list a svg {
