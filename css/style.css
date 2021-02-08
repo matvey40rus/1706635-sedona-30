@@ -31,6 +31,7 @@
   --blue: #81B3D2;
   --dark-blue: #669EC0;
   --extra-dark-blue: #5496BD;
+  --basic-light-line: #E5E5E5;
 }
 
 /* Global styles*/
@@ -197,6 +198,9 @@ img {
   text-transform: uppercase;
   background-color: var(--brown);
   border: none;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .search-button:hover {
@@ -227,7 +231,7 @@ img {
 
 .search-item input:focus {
   background-color: var(--basic-white);
-  border: 2px solid #E5E5E5;
+  border: 2px solid var(--basic-light-line);
 }
 
 .form-date-input {
@@ -250,6 +254,9 @@ img {
   text-transform: uppercase;
   background-color: var(--blue);
   border: none;
+  font-size: 21px;
+  line-height: 26px;
+  cursor: pointer;
 }
 
 .submit-form-button:hover {
