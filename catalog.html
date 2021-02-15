@@ -12,16 +12,17 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
    </head>
    <body class="page-body">
-      <header class="inner-main-header">
+     <div class="page">
+      <header class="main-header">
          <a class="inner-header-logo" href="index.html">
            <img src="img/header-logo.svg" width=138" height="70" alt="Логотип Sedona">
          </a>
          <nav class="head-navigation">
-            <ul  class="navigation-list">
+            <ul class="navigation-list">
                <li><a class="navigation-item" href="#">Информация</a></li>
                <li><a class="navigation-item" href="#">Фото и видео</a></li>
                <li><a class="navigation-item" href="#">Карта штата</a></li>
-               <li><a class="navigation-item-active">Гостиницы</a></li>
+               <li><a class="navigation-item navigation-item-active">Гостиницы</a></li>
             </ul>
          </nav>
       </header>
@@ -34,15 +35,15 @@
                   <ul class="hotel-filter-feature-list">
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="features" value="pool" id="pool" checked>
-                        <label for="pool">Бассейн</label>
+                        <label class="criterion-label" for="pool">Бассейн</label>
                     </li>
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="features" value="parking" id="parking">
-                        <label for="parking">Парковка</label>
+                        <label class="criterion-label" for="parking">Парковка</label>
                     </li>
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="features" value="wifi" id="wifi">
-                        <label for="wifi">Wi-fi</label>
+                        <label class="criterion-label" for="wifi">Wi-fi</label>
                     </li>
                   </ul>
                </fieldset>
@@ -51,15 +52,15 @@
                   <ul>
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="housing_type" value="hotel" id="hotel" checked>
-                        <label for="hotel">Гостиница</label>
+                        <label class="criterion-label" for="hotel">Гостиница</label>
                     </li>
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="housing_type" value="motel" id="motel" checked>
-                        <label for="motel">Мотель</label>
+                        <label class="criterion-label" for="motel">Мотель</label>
                     </li>
                     <li class="filter-option">
                         <input class="filter-input-checkbox" type="checkbox" name="housing_type" value="apartments" id="apartments" checked>
-                        <label for="apartments">Апартаменты</label>
+                        <label class="criterion-label" for="apartments">Апартаменты</label>
                     </li>
                   </ul>
                </fieldset>
@@ -198,5 +199,6 @@
             </a>
          </p>
       </footer>
+    <div class="container">
    </body>
 </html>
