@@ -37,13 +37,10 @@
   --basic-sort: #C6C6C6;
   --shadow: 0, 1, 1;
   --shadow-white: 255, 255, 255;
+  --background-page: #888888;
 }
 
 /* Global styles*/
-
-.page {
-  height: 100%;
-}
 
 .page-body {
   min-width: 1200px;
@@ -55,7 +52,7 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background: var(--background-page);
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -78,11 +75,12 @@ img {
   margin: -1px;
 }
 
-.container {
+.page {
+  height: 100%;
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2),
-  0px 0px 0px 40px var(--special-grey);
+  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2);
+  background-color: var(--basic-white);
 }
 
 
@@ -135,7 +133,7 @@ img {
 .header-logo {
   position: absolute;
   width: 138px;
-  margin-left: 571px;
+  left: 571px;
 }
 
 /* Main content */
@@ -439,6 +437,7 @@ img {
   position: absolute;
   width: 138px;
   left: 571px;
+  order: 1;
 }
 
 .navigation-item-active {
@@ -448,7 +447,14 @@ img {
   line-height: 26px;
 }
 
+.page-catalog {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+}
+
 .filter {
+  margin: 0;
+  padding: 0 72px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
@@ -479,15 +485,26 @@ img {
   background-color: var(--blue);
   background: url(../img/filter-background.jpg) no-repeat;
   padding-top: 27px 73px 31px;
+  min-height: 217px;
 }
 
 .infrastructure,
 .housing-type {
   justify-self: start;
+  width: 135px;
+}
+
+.infrastructure {
+  margin-right: 119px;
+  padding: 0;
+}
+
+.housing-type {
+  padding: 0;
 }
 
 .cost-per-day {
-  justify-self: end;
+  width: 317px;
 }
 
 .hotel-fieldset {
@@ -551,6 +568,7 @@ img {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   cursor: pointer;
+  margin-left: 200px;
 }
 
 .show-button:hover {
@@ -560,9 +578,7 @@ img {
 
 .sort-by-contain {
   display: grid;
-  align-items: center;
-  grid-template-columns: max-content 200px 200px 1fr;
-  padding: 0 72px;
+  grid-template-columns: auto 1fr auto;
 }
 
 .hotel-results-found {
@@ -587,6 +603,7 @@ img {
 .hotel-results-sort {
   margin: 0;
   padding: 0;
+  margin-right: 37px;
 }
 
 .sort-by {
@@ -623,6 +640,8 @@ img {
 }
 
 .hotel-results-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -630,9 +649,9 @@ img {
 }
 
 .hotel-results-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  background-color: var(--basic-white);
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 30px 72px;
 }
 
