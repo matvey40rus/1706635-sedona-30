@@ -35,6 +35,8 @@
   --hex-gray: #ABABAB;
   --light-line: #666666;
   --basic-sort: #C6C6C6;
+  --shadow: 0, 1, 1;
+  --shadow-white: 255, 255, 255;
 }
 
 /* Global styles*/
@@ -79,7 +81,8 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2),
+  0px 0px 0px 40px var(--special-grey);
 }
 
 
@@ -98,13 +101,14 @@ img {
   color: var(--basic-black);
   background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr;
 }
 
 .navigation-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .navigation-item {
@@ -131,7 +135,7 @@ img {
 .header-logo {
   position: absolute;
   width: 138px;
-  justify-self: center;
+  margin-left: 571px;
 }
 
 /* Main content */
@@ -163,6 +167,7 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-extra-dark);
+  text-align: center;
 }
 
 .kinds {
@@ -231,9 +236,11 @@ img {
   background-color: var(--basic-gray);
 }
 
-.feature-list {
+.feature-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  padding: 0;
 }
 
 .feature-list li{
@@ -471,10 +478,7 @@ img {
   line-height: 21px;
   background-color: var(--blue);
   background: url(../img/filter-background.jpg) no-repeat;
-  padding-top: 27px;
-  padding-bottom: 31px;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-top: 27px 73px 31px;
 }
 
 .infrastructure,
