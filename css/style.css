@@ -90,7 +90,7 @@ img {
 
 .main-header {
   width: 1200px;
-  position: absolute;
+  position: relative;
 }
 
 .head-navigation {
@@ -99,6 +99,7 @@ img {
   color: var(--basic-black);
   background-color: transparent;
   display: grid;
+  padding: 0 73px;
 }
 
 .navigation-list {
@@ -106,11 +107,37 @@ img {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'first second gap third fourth';
+  grid-template-columns: 1fr 1fr 147px 1fr 1fr;
+  text-align: center;
+}
+
+.navigation-list li:nth-child(1) {
+  grid-area: first;
+  text-align: left;
+  margin-left: 17px;
+}
+
+.navigation-list li:nth-child(2) {
+  grid-area:second;
+  text-align: left;
+  margin-left: 17px;
+}
+
+.navigation-list li:nth-child(3) {
+  grid-area: third;
+  text-align: right;
+  margin-right: 17px;
+}
+
+.navigation-list li:nth-child(4) {
+  grid-area: fourth;
+  text-align: right;
+  margin-right: 17px;
 }
 
 .navigation-item {
-  color: var(--basic-black)
+  color: var(--basic-black);
   text-decoration: none;
   font-weight: 700;
   line-height: 26px;
@@ -131,9 +158,14 @@ img {
 }
 
 .header-logo {
+  grid-area: gap;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 138px;
   left: 571px;
+  margin: 0 auto;
+  margin-bottom: -22px;
 }
 
 /* Main content */
@@ -433,13 +465,6 @@ img {
 
 /* Catalog */
 
-.inner-header-logo {
-  position: absolute;
-  width: 138px;
-  left: 571px;
-  order: 1;
-}
-
 .navigation-item-active {
   color: var(--brown);
   font-weight: bold;
@@ -447,16 +472,9 @@ img {
   line-height: 26px;
 }
 
-.page-catalog {
-  display: grid;
-  grid-template-rows: min-content min-content 1fr;
-}
-
 .filter {
   margin: 0;
   padding: 0 72px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
 }
 
 .filter li {
@@ -484,13 +502,12 @@ img {
   line-height: 21px;
   background-color: var(--blue);
   background: url(../img/filter-background.jpg) no-repeat;
-  padding-top: 27px 73px 31px;
+  padding: 27px 73px 31px;
   min-height: 217px;
 }
 
 .infrastructure,
 .housing-type {
-  justify-self: start;
   width: 135px;
 }
 
@@ -576,10 +593,6 @@ img {
   color: var(--basic-black);
 }
 
-.sort-by-contain {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-}
 
 .hotel-results-found {
   font-family: inherit;
@@ -640,8 +653,6 @@ img {
 }
 
 .hotel-results-item {
-  display: grid;
-  grid-template-columns: 1fr auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -685,7 +696,6 @@ img {
 
 .hotel-prestige {
   align-self: center;
-  justify-self: end;
 }
 
 .hotel-stars {
