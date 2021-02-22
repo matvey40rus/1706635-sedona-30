@@ -15,7 +15,7 @@
      <div class="page">
       <header class="main-header">
          <a class="header-logo">
-           <img src="img/header-logo.svg" width=138"height="70" alt="Логотип Sedona">
+           <img src="img/header-logo.svg" width="138" height="70" alt="Логотип Sedona">
          </a>
          <nav class="head-navigation">
             <ul class="navigation-list">
@@ -93,7 +93,8 @@
              <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
           </div>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <p class="search-item">
+           <div class="search-form-wrap">
+            <p class="search-item arrival-data">
              <label class="form-label" for="arrival-input">Дата заезда:</label>
              <input type="text" id="arrival-input" name="arrival-date" placeholder="24 Апреля 2017">
              <button class="form-date-input" type="button" title="Выбрать дату заезда">
@@ -103,7 +104,7 @@
                </svg>
              </button>
             </p>
-            <p class="search-item">
+            <p class="search-item departure-data">
              <label class="form-label" for="departure-input">Дата выезда:</label>
              <input type="text" id="departure-input" name="departure-date" placeholder="4 июля 2017">
              <button class="form-date-input" type="button" title="Выбрать дату выезда">
@@ -113,7 +114,7 @@
                </svg>
              </button>
             </p>
-            <p class="form-label">
+            <p class="form-label__item">
              <label for="adult" class="form-label">Взрослые:</label>
              <button class="icon-minus" type="button" title="Уменьшить количетво взрослых">
                <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +128,7 @@
                </svg>
              </button>
             </p>
-            <p class="form-label"
+            <p class="form-label__item">
              <label for="children" class="form-label">Дети:</label>
              <button class="icon-minus" type="button" title="Уменьшить количетво детей">
                <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
@@ -141,11 +142,14 @@
                </svg>
              </button>
             </p>
+           </div>
              <button type="submit" class="submit-form-button">Найти</button>
           </form>
-          <img src="img/map.jpg" width="1200" height="594" alt="Google карта">
-          <iframe class="google_map" tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62750.76538150069!2d-111.8351159650146!3d34.851085024576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1611664854988!5m2!1sru!2sru" width="1200" height="480" style="border:0;" allowfullscreen>
-          </iframe>
+          <div class="map-search">
+            <img src="img/map.jpg" width="1200" height="594" alt="Google карта">
+            <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62750.76538150069!2d-111.8351159650146!3d34.851085024576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1611664854988!5m2!1sru!2sru" width="1200" height="480" style="border:0;" allowfullscreen>
+            </iframe>
+          </div>
          </section>
       </main>
       <footer class="main-footer">
