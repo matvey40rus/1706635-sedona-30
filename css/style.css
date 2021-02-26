@@ -204,9 +204,8 @@ img {
 .kinds-text {
   display: flex;
   flex-direction: column;
-  width: 308px;
-  padding: 46px 46px 0;
-  align-items: center;
+  padding: 0 46px;
+  justify-content: center;
 }
 
 .bridge {
@@ -216,9 +215,9 @@ img {
 .bridge-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 308px;
-  padding: 46px 46px 0;
+  padding: 0 46px;
+  justify-content: center;
 }
 
 .blue-zone {
@@ -373,6 +372,8 @@ img {
 
 .search-form {
   position: absolute;
+  z-index: 1;
+  bottom: 168px;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -381,12 +382,12 @@ img {
   box-shadow: 0px 7px 15px var(--basic-black-shadow);
   margin: 0 auto;
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   left: 50%;
-  margin-left: -284px;
+  transform: translateX(-50%);
 }
 
 .search-item,
@@ -417,11 +418,13 @@ img {
   margin-left: 12px;
 }
 
-.search-item input:hover {
+.search-item.arrival-data input:hover,
+.search-item.departure-data input:hover {
   border-color: var(--special-dark-gray);
 }
 
-.search-item input:focus {
+.search-item.arrival-data input:focus,
+.search-item.departure-data input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-light-line);
 }
@@ -481,10 +484,14 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.map-search {
+position: relative;
+}
+
 .google_map {
   position: absolute;
-  width: 1200px;
-  height: 594px;
+  top: 0;
+  left: 0;
 }
 
 .google-img {
@@ -497,12 +504,9 @@ img {
   background-color: var(--background-footer);
   color: var(--basic-black);
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: min-content;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 20px 0px;
-  margin-top: 35px;
-  height: 120px;
 }
 
 .contact-list {
@@ -545,6 +549,7 @@ img {
 
 .social-list a {
   background-color: var(--blue);
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -944,16 +949,18 @@ input[name="cost-max"] {
   font-weight: 400;
   border: 1px solid var(--basic-light-line);
   margin-top: -2px;
-  padding: 0 6%;
+  padding: 30px 73px;
+  width: 100%;
+  display: flex;
 }
 
 .hotel-results-list {
   background-color: var(--basic-white);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 72px;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .hotel-results-list h2 {
@@ -974,18 +981,21 @@ input[name="cost-max"] {
 }
 
 .hotel-results-image {
-  align-self: center;
+  margin-right: 29px;
 }
 
 .hotel-info {
   display: flex;
-  flex-wrap: wrap;
-  align-self: stretch;
-  margin-left: 29px;
-  width: 350px;
-  margin-top: 26px;
-  margin-bottom: 33px;
-  min-height: 90px;
+  flex-direction: column;
+}
+
+.type-price {
+  display: flex;
+}
+
+.type-price p {
+  width: 107px;
+  margin: 5px 9px 15px 0;
 }
 
 .hotel-rating {
